@@ -60,6 +60,15 @@ button{
     border: none;
 }
 
+.botao1{
+    background: linear-gradient(45deg, rgb(18, 34, 21), rgb(0, 255, 115));
+    font-size: 30px;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border: none;
+}
+
 .botao button:hover{
     background: linear-gradient(45deg, rgb(74, 156, 89), rgb(45, 226, 0));
     color: black
