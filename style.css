@@ -55,12 +55,27 @@ button{
     gap: 40px;
 }
 
+.botao2{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 .botao button{
     background: linear-gradient(45deg, rgb(18, 34, 21), rgb(0, 255, 115));
     font-size: 15px;
     color: rgb(255, 255, 255);
+    width: 90px;
+    height: 100px;
+    border: none;
+}
+
+.botao2 button{
+    background: linear-gradient(45deg, rgb(18, 34, 21), rgb(0, 255, 115));
+    font-size: 15px;
+    color: rgb(255, 255, 255);
     width: 120px;
-    height: 90px;
+    height: 100px;
     border: none;
 }
 
