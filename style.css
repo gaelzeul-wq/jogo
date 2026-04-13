@@ -22,6 +22,11 @@ footer{
     text-align: center;
 }
 
+#tabes{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}   
+
 hr{
     margin: 0;
     padding: 0px;
@@ -79,6 +84,15 @@ button{
     border: none;
 }
 
+.botao3 button{
+    background: linear-gradient(45deg, rgb(18, 34, 21), rgb(0, 255, 115));
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    width: 90px;
+    height: 90px;
+    border: none;
+}
+
 .botao1{
     background: linear-gradient(45deg, rgb(18, 34, 21), rgb(0, 255, 115));
     font-size: 35px;
@@ -95,6 +109,18 @@ button{
 }
 
 .botao1:hover{
+    background: linear-gradient(45deg, rgb(74, 156, 89), rgb(45, 226, 0));
+    color: black
+
+}
+
+.botao2 button:hover{
+    background: linear-gradient(45deg, rgb(74, 156, 89), rgb(45, 226, 0));
+    color: black
+
+}
+
+.botao3 button:hover{
     background: linear-gradient(45deg, rgb(74, 156, 89), rgb(45, 226, 0));
     color: black
 

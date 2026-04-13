@@ -16,14 +16,16 @@
                 <P id="pertebaixa">CLICK AO INFINITO</P>
             </div>
         </div>
-    </header><hr>
+    </header>
     <main class="meio">
 
         <div>
             <h2>CLICK NO BOTÃO</h2>
             <p id="pontos">0</p>
             <button class="botao1" onclick="clicou()">Click</button>
-        </div><br><br><h2>COMPRAR AUTOCLICK</h2><br><br>
+        </div><br><h2>COMPRAR AUTOCLICK</h2><br>
+        <p id="tabes"> Clicks: <span id="autoclicks">0</span>/s</p>
+<br><br>        
      <div class="botao">
 
         <div>
@@ -32,12 +34,12 @@
         </div>
 
         <div>
-            <button onclick="comprarAuto2()">1.000 Clicks AutoClick de (10)</button>
+            <button onclick="comprarAuto2()"> <span id="preçoAuto2">1.000</span> Clicks AutoClick de (10)</button>
             <p>AutoClick <span id="auto2">0</span></p>
          </div>
 
         <div>
-            <button onclick="comprarAuto3()">10.000 Clicks AutoClick de (100)</button>
+            <button onclick="comprarAuto3()"> <span id="preçoAuto3">10.000</span> Clicks AutoClick de (100)</button>
             <p>AutoClick <span id="auto3">0</span></p>
          </div>
 
@@ -48,16 +50,26 @@
      <div class="botao2">
 
         <div>
-            <button onclick="comprarAuto4()">1.000.000 Clicks AutoClick de (100.000)</button>
+            <button onclick="comprarAuto4()"> <span id="preçoAuto4">1.000.000</span> Clicks AutoClick de (100.000)</button>
             <p>AutoClick <span id="auto4">0</span></p>
         </div>
 
         <div>
-            <button onclick="comprarAuto5()">1.000.000.000 Clicks AutoClick de (1.000.000)</button>
+            <button onclick="comprarAuto5()"> <span id="preçoAuto5">1.000.000.000</span> Clicks AutoClick de (1.000.000)</button>
             <p>AutoClick <span id="auto5">0</span></p>
          </div>
 
         </div>
+<br><br>
+
+    <div class="botao3">
+        
+        <div>
+            <button onclick="comprarclick6()"> <span id="precoAuto6">5</span> Clicks Manual de (<span id="poderclick6">1</span>)</button>
+            <p>Clicks Manuais <span id="auto6">0</span></p>
+         </div>
+    </div>
+
 
     </main><hr>
 

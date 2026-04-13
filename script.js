@@ -4,12 +4,24 @@ let auto2 = 0;
 let auto3 = 0;
 let auto4 = 0;
 let auto5 = 0;
+let auto6 = 0;
 
 let autoQtd = 0;
 let auto2Qtd = 0;
 let auto3Qtd = 0;
 let auto4Qtd = 0;
-let auto5Qtd = 0;   
+let auto5Qtd = 0; 
+let auto6Qtd = 0;
+
+
+let autoclicks = 0;
+let preçoAuto1 = 25;
+let preçoAuto2 = 1000;
+let preçoAuto3 = 10000;
+let preçoAuto4 = 1000000;
+let preçoAuto5 = 1000000000;
+let precoAuto6 = 5;
+let poderclick6 = 1;
 
 const LIMITE0 = 1;
 const LIMITE01 =100;
@@ -23,6 +35,7 @@ const LIMITE8 =1000000000;
 const LIMITE9 =10000000000;
 const LIMITE10 =100000000000;
 const LIMITE11 =1000000000000;
+
 
 let venceu0 = false;
 let venceu = false;
@@ -53,52 +66,78 @@ function formatarNumero(num) {
     }
 }
 
+
 function clicou(){
-    pontos+=1;
+    pontos+= poderclick6;
     atualizar();
 }
 
+function comprarClick6(){
+    if(pontos >= custoclick){
+        pontos -= custoclick;
+        poderdoclick += 1;
+        custoclick += 5;
+        custoclick = Math.floor(custoclick) * 1.5;
+        atualizar();
+    }
+}
+
 function comprarAuto(){
-    if(pontos >= 25){
-        pontos -= 25;
+    if(pontos >= preçoAuto1){
+        pontos -= preçoAuto1;
         auto+=2;
+        preçoAuto1 += 5;
         autoQtd+=1;
         atualizar();
     }
 }
 
 function comprarAuto2(){
-    if(pontos >= 1000){
-        pontos -= 1000;
+    if(pontos >= preçoAuto2){
+        pontos -= preçoAuto2;
         auto2+=10;
+        preçoAuto2 += 250;
         auto2Qtd+=1;
         atualizar();
     }
 }
 
 function comprarAuto3(){
-    if(pontos >= 10000){
-        pontos -= 10000;
+    if(pontos >= preçoAuto3){
+        pontos -= preçoAuto3;
         auto3+=1000;
+        preçoAuto3 += 2500;
         auto3Qtd+=1;
         atualizar();
     }
 }
 
 function comprarAuto4(){
-    if(pontos >= 1000000){
-        pontos -= 1000000;
+    if(pontos >= preçoAuto4){
+        pontos -= preçoAuto4;
         auto4+=100000;
+        preçoAuto4 += 250000;
         auto4Qtd+=1;
         atualizar();
     }
 }
 
 function comprarAuto5(){
-    if(pontos >= 1000000000){
-        pontos -= 1000000000;
+    if(pontos >= preçoAuto5){
+        pontos -= preçoAuto5;
         auto5+=1000000;
+        preçoAuto5 += 2500000;
         auto5Qtd+=1;
+        atualizar();
+    }
+}
+
+function comprarclick6(){
+    if(pontos >= precoAuto6){
+        pontos -= precoAuto6;
+        poderclick6 += 1;
+        precoAuto6 = Math.floor(precoAuto6) * 2;
+        auto6Qtd+=1;
         atualizar();
     }
 }
@@ -110,6 +149,17 @@ function atualizar(){
     document.getElementById("auto3").innerText = formatarNumero(auto3Qtd);
     document.getElementById("auto4").innerText = formatarNumero(auto4Qtd);
     document.getElementById("auto5").innerText = formatarNumero(auto5Qtd);
+    document.getElementById("auto6").innerText = formatarNumero(auto6Qtd);
+    document.getElementById("autoclicks").innerText = formatarNumero(auto + auto2 + auto3 + auto4 + auto5);
+    document.getElementById("preçoAuto1").innerText = (preçoAuto1);
+    document.getElementById("preçoAuto2").innerText = (preçoAuto2);
+    document.getElementById("preçoAuto3").innerText = (preçoAuto3);
+    document.getElementById("preçoAuto4").innerText = (preçoAuto4);
+    document.getElementById("preçoAuto5").innerText = (preçoAuto5);
+    document.getElementById("precoAuto6").innerText = (precoAuto6);
+    document.getElementById("poderclick6").innerText = (poderclick6);
+
+
 
     if(pontos >= LIMITE0 && !venceu0){
         venceu0 = true;
@@ -174,5 +224,5 @@ function atualizar(){
 
 setInterval(function(){
     pontos += auto + auto2 + auto3 + auto4 + auto5;
-    atualizar();
+   atualizar();
 },1000);
