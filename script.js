@@ -13,7 +13,6 @@ let auto4Qtd = 0;
 let auto5Qtd = 0; 
 let auto6Qtd = 0;
 
-
 let autoclicks = 0;
 let preçoAuto1 = 25;
 let preçoAuto2 = 1000;
@@ -35,7 +34,27 @@ const LIMITE8 =1000000000;
 const LIMITE9 =10000000000;
 const LIMITE10 =100000000000;
 const LIMITE11 =1000000000000;
-
+const LIMITE12 =10000000000000;
+const LIMITE13 =100000000000000;
+const LIMITE14 =1000000000000000;
+const LIMITE15 =10000000000000000;
+const LIMITE16 =100000000000000000;
+const LIMITE17 =1000000000000000000;
+const LIMITE18 =10000000000000000000;
+const LIMITE19 =100000000000000000000;
+const LIMITE20 =1000000000000000000000;
+const LIMITE21 =10000000000000000000000;
+const LIMITE22 =100000000000000000000000;
+const LIMITE23 =1000000000000000000000000;
+const LIMITE24 =10000000000000000000000000;
+const LIMITE25 =100000000000000000000000000;
+const LIMITE26 =1000000000000000000000000000;
+const LIMITE27 =10000000000000000000000000000;
+const LIMITE28 =100000000000000000000000000000;
+const LIMITE29 =1000000000000000000000000000000;
+const LIMITE30 =10000000000000000000000000000000;
+const LIMITE31 =100000000000000000000000000000000;
+const LIMITE32 =1000000000000000000000000000000000;
 
 let venceu0 = false;
 let venceu = false;
@@ -49,10 +68,44 @@ let venceu8 = false;
 let venceu9 = false;
 let venceu10 = false;
 let venceu11 = false;
-
+let venceu12 = false;
+let venceu13 = false;
+let venceu14 = false;
+let venceu15 = false;
+let venceu16 = false;
+let venceu17 = false;
+let venceu18 = false;
+let venceu19 = false;
+let venceu20 = false;
+let venceu21 = false;
+let venceu22 = false;
+let venceu23 = false;   
+let venceu24 = false;
+let venceu25 = false;
+let venceu26 = false;
+let venceu27 = false;
+let venceu28 = false;
+let venceu29 = false;
+let venceu30 = false;
+let venceu31 = false;
+let venceu32 = false;
 
 function formatarNumero(num) {
-    if (num >= 1000000000000) {
+    if (num >= 1000000000000000000000000000000000) {
+        return (num / 1000000000000000000000000000000000).toFixed(1).replace(".0", "") + 'DEC';
+    } else if (num >= 1000000000000000000000000000000) {
+        return (num / 1000000000000000000000000000000).toFixed(1).replace(".0", "") + 'NON';
+    } else if (num >= 1000000000000000000000000000) {
+        return (num / 1000000000000000000000000000).toFixed(1).replace(".0", "") + 'OCT';
+    } else if (num >= 1000000000000000000000000) {
+        return (num / 1000000000000000000000000).toFixed(1).replace(".0", "") + 'SEPT';
+    } else if (num >= 1000000000000000000000) {
+        return (num / 1000000000000000000000).toFixed(1).replace(".0", "") + 'SEX';
+    } else if (num >= 1000000000000000000) {
+        return (num / 1000000000000000000).toFixed(1).replace(".0", "") + 'QUIN';
+    } else if (num >= 1000000000000000) {
+        return (num / 1000000000000000).toFixed(1).replace(".0", "") + 'QUA';
+    } else if (num >= 1000000000000) {
         return (num / 1000000000000).toFixed(1).replace(".0", "") + 'T';
     } else if (num >= 1000000000) {
         return (num / 1000000000).toFixed(1).replace(".0", "") + 'B';
@@ -125,7 +178,7 @@ function comprarAuto5(){
 function comprarclick6(){
     if(pontos >= precoAuto6){
         pontos -= precoAuto6;
-        poder7 += 2;
+        poder7 = Math.floor(poder7) * 2;
         precoAuto6 = Math.floor(precoAuto6) * 3;
         auto6Qtd+=1;
         atualizar();
@@ -211,9 +264,127 @@ function atualizar(){
         venceu11 = true;
         alert("Parabéns, você venceu o jogo!");
     }
+
+    if(pontos >= LIMITE12 && !venceu12){
+        venceu12 = true;
+        alert("Parabéns pela conquisa de 100.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE13 && !venceu13){
+        venceu13 = true;
+        alert("Parabéns pela conquisa de 1.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE14 && !venceu14){
+        venceu14 = true;
+        alert("Parabéns pela conquisa de 10.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE15 && !venceu15){
+        venceu15 = true;
+        alert("Parabéns pela conquisa de 100.000.000.000.000.000 Clicks!");
+    }
+
+    if(pontos >= LIMITE16 && !venceu16){
+        venceu16 = true;
+        alert("Parabéns pela conquisa de 1.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE17 && !venceu17){
+        venceu17 = true;
+        alert("Parabéns pela conquisa de 10.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE18 && !venceu18){
+        venceu18 = true;
+        alert("Parabéns pela conquisa de 100.000.000.000.000.000.000 Clicks!");
+    }
+
+    if(pontos >= LIMITE19 && !venceu19){
+        venceu19 = true;
+        alert("Parabéns pela conquisa de 1.000.000.000.000.000.000.000 Clicks!");
+    }   
+
+    if(pontos >= LIMITE20 && !venceu20){    
+        venceu20 = true;
+        alert("Parabéns pela conquisa de 10.000.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE21 && !venceu21){
+        venceu21 = true;
+        alert("Parabéns pela conquisa de 100.000.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE22 && !venceu22){
+        venceu22 = true;
+        alert("Parabéns pela conquisa de 1.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+    if(pontos >= LIMITE23 && !venceu23){
+        venceu23 = true;
+        alert("Parabéns pela conquisa de 10.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE24 && !venceu24){
+        venceu24 = true;
+        alert("Parabéns pela conquisa de 100.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+    if(pontos >= LIMITE25 && !venceu25){
+        venceu25 = true;
+        alert("Parabéns pela conquisa de 1.000.000.000.000.000.000.000.000 Clicks!");
+    }   
+
+    if(pontos >= LIMITE26 && !venceu26){    
+        venceu26 = true;
+        alert("Parabéns pela conquisa de 10.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE27 && !venceu27){
+        venceu27 = true;
+        alert("Parabéns pela conquisa de 100.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+    if(pontos >= LIMITE28 && !venceu28){
+        venceu28 = true;
+        alert("Parabéns pela conquisa de 1.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+    if(pontos >= LIMITE29 && !venceu29){
+        venceu29 = true;
+        alert("Parabéns pela conquisa de 10.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE30 && !venceu30){
+        venceu30 = true;
+        alert("Parabéns pela conquisa de 100.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE31 && !venceu31){
+        venceu31 = true;
+        alert("Parabéns pela conquisa de 1.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
+        if(pontos >= LIMITE32 && !venceu32){
+        venceu32 = true;
+        alert("Parabéns pela conquisa de 10.000.000.000.000.000.000.000.000 Clicks!");
+    }
+
 }
 
 setInterval(function(){
     pontos += auto + auto2 + auto3 + auto4 + auto5;
    atualizar();
 },1000);
+
+/////CONEMETRO/////
+let tempo = 0;
+
+setInterval(function(){
+    tempo++;
+    let horas = Math.floor(tempo / 3600);
+    let minutos = Math.floor((tempo % 3600) / 60);
+    let segundos = tempo % 60;
+    document.getElementById("tempo").textContent = `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+}, 1000);  
+/////CONEMETRO/////
