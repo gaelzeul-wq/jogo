@@ -21,7 +21,7 @@ let preçoAuto3 = 10000;
 let preçoAuto4 = 1000000;
 let preçoAuto5 = 1000000000;
 let precoAuto6 = 5;
-let poderclick6 = 1;
+let poder7 = 1;
 
 const LIMITE0 = 1;
 const LIMITE01 =100;
@@ -68,18 +68,8 @@ function formatarNumero(num) {
 
 
 function clicou(){
-    pontos+= poderclick6;
+    pontos+= poder7;
     atualizar();
-}
-
-function comprarClick6(){
-    if(pontos >= custoclick){
-        pontos -= custoclick;
-        poderdoclick += 1;
-        custoclick += 5;
-        custoclick = Math.floor(custoclick) * 1.5;
-        atualizar();
-    }
 }
 
 function comprarAuto(){
@@ -135,8 +125,8 @@ function comprarAuto5(){
 function comprarclick6(){
     if(pontos >= precoAuto6){
         pontos -= precoAuto6;
-        poderclick6 += 1;
-        precoAuto6 = Math.floor(precoAuto6) * 2;
+        poder7 += 2;
+        precoAuto6 = Math.floor(precoAuto6) * 3;
         auto6Qtd+=1;
         atualizar();
     }
@@ -150,14 +140,15 @@ function atualizar(){
     document.getElementById("auto4").innerText = formatarNumero(auto4Qtd);
     document.getElementById("auto5").innerText = formatarNumero(auto5Qtd);
     document.getElementById("auto6").innerText = formatarNumero(auto6Qtd);
-    document.getElementById("autoclicks").innerText = formatarNumero(auto + auto2 + auto3 + auto4 + auto5);
+      document.getElementById("autoclicks").innerText = formatarNumero(auto + auto2 + auto3 + auto4 + auto5);
+    
     document.getElementById("preçoAuto1").innerText = (preçoAuto1);
     document.getElementById("preçoAuto2").innerText = (preçoAuto2);
     document.getElementById("preçoAuto3").innerText = (preçoAuto3);
     document.getElementById("preçoAuto4").innerText = (preçoAuto4);
     document.getElementById("preçoAuto5").innerText = (preçoAuto5);
     document.getElementById("precoAuto6").innerText = (precoAuto6);
-    document.getElementById("poderclick6").innerText = (poderclick6);
+    document.getElementById("poder7").innerText = (poder7);
 
 
 
