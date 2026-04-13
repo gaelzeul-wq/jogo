@@ -91,7 +91,7 @@ button{
 .botao3 button{
     background: linear-gradient(45deg, rgb(40, 175, 63), rgb(39, 100, 67));
     font-size: 15px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     width: 90px;
     height: 90px;
     border: none;
