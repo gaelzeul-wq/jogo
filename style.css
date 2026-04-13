@@ -35,8 +35,12 @@ hr{
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-size: 45px;
 } 
+
+.botais{
+    font-size: 30px;
+}
 
 #pertebaixa{
     font-size: 20px;
