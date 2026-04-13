@@ -89,7 +89,7 @@ button{
 }
 
 .botao3 button{
-    background: linear-gradient(45deg, rgb(18, 34, 21), rgb(0, 255, 115));
+    background: linear-gradient(45deg, rgb(40, 175, 63), rgb(39, 100, 67));
     font-size: 15px;
     color: rgb(255, 255, 255);
     width: 90px;
@@ -125,7 +125,7 @@ button{
 }
 
 .botao3 button:hover{
-    background: linear-gradient(45deg, rgb(74, 156, 89), rgb(45, 226, 0));
+    background: linear-gradient(45deg, rgb(113, 233, 135), rgb(35, 163, 2));
     color: black
 
 }
